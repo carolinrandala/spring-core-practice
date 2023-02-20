@@ -3,7 +3,7 @@ package org.sda.beans;
 import lombok.Setter;
 
 /**
- * Configuration with java class itself
+ * Explicit Configuration with java class itself
  */
 
 @Setter

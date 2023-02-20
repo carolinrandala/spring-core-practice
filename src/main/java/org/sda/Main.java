@@ -12,7 +12,7 @@ public class Main {
         // Importing java application configuration
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
         applicationContext.register(ApplicationConfiguration.class);
-        applicationContext.refresh();
+        applicationContext.refresh(); // for a safety always refresh configuration
 
         MyBean myBean = applicationContext.getBean(MyBean.class);
         System.out.println(myBean.sayHello());
